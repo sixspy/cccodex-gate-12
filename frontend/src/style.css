@@ -48,6 +48,18 @@ code { font-family: Consolas, monospace; font-size: 13px; word-break: break-all;
 table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid #e4d7c2; font-size: 14px; }
 .warn { color: #8d2f24; margin: 0; }
+.void { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.panel { border: 1px solid #e4d7c2; background: rgba(255, 250, 242, 0.6); padding: 12px; }
+.panel h3 { margin: 0 0 8px; font-size: 16px; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; }
+button.danger { background: #8d2f24; }
+.tomb { font-style: normal; color: #8d2f24; border: 1px solid #8d2f24; padding: 0 4px; font-size: 12px; white-space: nowrap; }
+tr.voided td:not(.mark) { text-decoration: line-through; color: #9b8f7c; }
+.day em.pend { color: #8d2f24; }
+.rev { border-top: 1px dashed #c4b498; margin-top: 10px; padding-top: 6px; }
+.rev h4 { margin: 6px 0 4px; font-size: 14px; font-weight: 560; }
+.cmp { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.erased span { color: #9b8f7c; }
 @media (max-width: 900px) {
-  .layout, .layers { grid-template-columns: 1fr; }
+  .layout, .layers, .void, .cmp { grid-template-columns: 1fr; }
 }
